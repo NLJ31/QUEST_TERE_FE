@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins','sans-serif';
+}
+
+header{
+    position: fixed;
+    z-index:1040;
+    width: 100%;
+}
+
+#navbar{
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar .container-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: #CCFFE5;
+}
+
+#navbar .container-navbar .navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+#navbar .container-navbar .navbar-content > a{
+    text-decoration: none;
+    color: #000099;
+    font-weight: 400;
+    font-size: 17.97px;
+    transition: 1s;
+}
+
+#navbar .container-navbar .navbar-content > a:hover{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #6161FA;
+}
+#navbar .container-navbar .navbar-content > a:active{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #6161FA;
+}
+#landing-page{
+    padding-top: 150px;  
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    background: linear-gradient(180deg, rgba(160, 228, 203, 0) 0%, #CFF5E7 44.27%, #CFF5E7 83.86%, rgba(207, 245, 231, 0.323698) 97.53%, rgba(207, 245, 231, 0) 100%);
+}
+
+#landing-page > h1, #about-us > h1, .REASONS > h1, #contact-form > h1, #medpar > h1{
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    color: #A0E4CB;
+}
+
+#landing-page > h2, #medpar > h2{
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    color: #65B698;
+}
+
+#about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(180deg, rgba(160, 228, 203, 0) 0%, #CFF5E7 44.27%, #CFF5E7 83.86%, rgba(207, 245, 231, 0.323698) 97.53%, rgba(207, 245, 231, 0) 100%);
+    padding: 1rem 0;
+}
+
+
+#about-us > p{
+    font-family: 'Audiowide';
+    font-style: normal;
+    padding: 0 5rem;
+    text-align: center;
+    color: #65B698;
+    font-size: 1.3rem;
+}
+
+.about-register{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.about-register > p{
+    font-family: 'Audiowide';
+    font-style: normal;
+    color: #3A7761; 
+    font-size: 1.1rem;
+}
+
+.about-register > a{
+    text-decoration: none;
+    color: #186247;
+}
+
+
+.REASONS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.card{
+    width: 359px;
+    height: 297px;
+    background: #E7F9F2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.0472px;
+    color: #0D4C92;
+}
+.card > p{
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: linear-gradient(180deg, rgba(160, 228, 203, 0) 0%, #CFF5E7 44.27%, #CFF5E7 83.86%, rgba(207, 245, 231, 0.323698) 97.53%, rgba(207, 245, 231, 0) 100%);
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+    width: 1130px;
+    height: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+#contact > h1{
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #A0E4CB;   
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.input-group > input{
+    font-family: 'Audiowide';
+    Width: 894px;
+    Height: 55px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    color: #707070;
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    outline:none;
+}
+
+.input-group> label{
+    font-family: 'Audiowide';
+    font-weight: 600;
+    font-size: 17px;   
+    color: #59C1BD;
+}
+.input-group > textarea{
+    font-family: 'Audiowide';
+    Width: 894px;
+    Height: 150px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    color: #707070;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    outline:none;
+    resize:none;
+}
+.browse{
+    width: 97.38px;
+    height: 36.63px;
+    border: none;
+    outline: none;
+    background: #A0E4CB;
+    border-radius: 44.0865px;
+    color: white;
+    align-self: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cash-prize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background:darkcyan;
+   height: 100px;
+   width: 800px;
+   border-radius: 8px;
+   color: gold;
+   font-weight: 700;
+   font-size: 3.5rem;
+   text-decoration: underline;
+   transition: 1s;
+}
+
+.cash-prize:hover{
+    font-size: 4rem;
+}
+
+.cash-prize:active{
+    font-size: 4rem;
+}
+hr{
+    height: 4px;
+    width: 100%;
+    background-color:solid #186247;
+    margin: 1.5rem 0;
+}
+
+#medpar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background: linear-gradient(180deg, rgba(160, 228, 203, 0) 0%, #CFF5E7 44.27%, #CFF5E7 83.86%, rgba(207, 245, 231, 0.323698) 97.53%, rgba(207, 245, 231, 0) 100%);
+}
+.sponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#medpar > h4{
+    font-weight: 700;
+    font-size: 26px;
+    color: #0D4C92;
+}
+
+#medpar > p{
+    font-weight: 700;
+    font-size: 23px;
+    color: #0D4C92;
+}
+
+#medpar > h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #0D4C92;
+}
+
+.media-part{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 10px 100px 160px 0px rgba(0,0,0,0.2);
+    background: linear-gradient(180deg, rgba(160, 228, 203, 0) 0%, #CFF5E7 44.27%, #CFF5E7 83.86%, rgba(207, 245, 231, 0.323698) 97.53%, rgba(207, 245, 231, 0) 100%);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.judul{
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: #A0E4CB;
+}
+
+.links{
+    align-self:flex-end;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10px;
+    color: #0D4C92;
+}
+.logo-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-logo > h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #0D4C92;
+}
+.links-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    gap: 1rem;
+}
+.text-akhir{
+    align-self: center;
+    font-weight: 700;
+    font-family: 'Poppins';
+    font-style: normal;
+    color:#0D4C92;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
